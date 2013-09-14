@@ -3,9 +3,9 @@ module.exports.on = on;
 module.exports.off = off;
 
 function on (element, event, callback, capture) {
-  element.addEventListener(event, callback, capture);
+  (element.addEventListener || element.attachEvent).call(element, event, callback, capture);
 }
 
 function off (element, event, callback, capture) {
-  element.removeEventListener(event, callback, capture);
+  (element.removeEventListener || element.detachEvent).call(element, event, callback, capture);
 }
