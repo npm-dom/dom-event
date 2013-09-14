@@ -1,0 +1,23 @@
+{
+  "name": "on-off",
+  "version": "0.0.0",
+  "description": "DOM Event Binding Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "fox -b"
+  },
+  "devDependencies": {
+    "fox": "*"
+  },
+  "keywords": [
+    "dom",
+    "event",
+    "binding"
+  ],
+  "repository": {
+    "url": "git@github.com:azer\/on-off.git",
+    "type": "git"
+  },
+  "author": "Azer Ko\u00e7ulu <azer@kodfabrik.com>",
+  "license": "BSD"
+}
