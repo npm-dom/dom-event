@@ -1,13 +1,13 @@
+var test = require("prova");
 var on = require('./');
 var off = on.off;
 var button;
 
-beforeEach(function(){
-  document.body.innerHTML = '<button>Click Me</button>';
-  button = document.querySelector('button');
-});
+reset();
 
-it('binds and unbinds a new event', function(done){
+test('binds and unbinds a new event', function(t){
+  t.plan(1);
+
   on(button, 'click', callback);
 
   setTimeout(function(){
@@ -17,7 +17,11 @@ it('binds and unbinds a new event', function(done){
   function callback () {
     off(button, 'click', callback);
     button.click();
-    done();
+    t.ok(true);
   }
-
 });
+
+function reset () {
+  document.body.innerHTML = '<button>Click Me</button>';
+  button = document.querySelector('button');
+}

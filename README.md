@@ -1,22 +1,21 @@
-## on-off
+## dom-event
 
-DOM Event Binding Library
+Add/remove DOM events
 
 ## Install
 
 ```bash
-$ npm install on-off
+$ npm install dom-event
 ```
 
 ## Usage
 
 ```js
-on = require('on-off')
-off = on.off
+var on = require('dom-event')
+var off = on.off
 
-on(document.body, hello)
-
-later off(document.body, hello)
+on(document.body, hello) // adds the event listener
+off(document.body, hello) // removes
 
 function hello () {
   console.log('hello!')

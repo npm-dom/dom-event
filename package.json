@@ -1,13 +1,13 @@
 {
-  "name": "on-off",
-  "version": "0.0.2",
-  "description": "DOM Event Binding Library",
+  "name": "dom-event",
+  "version": "0.0.0",
+  "description": "Add/remove DOM events",
   "main": "index.js",
   "scripts": {
-    "test": "fox -b"
+    "test": "node test -b"
   },
   "devDependencies": {
-    "fox": "*"
+    "prova": "*"
   },
   "keywords": [
     "dom",
@@ -15,7 +15,7 @@
     "binding"
   ],
   "repository": {
-    "url": "git@github.com:azer/on-off.git",
+    "url": "git@github.com:npm-dom/dom-event.git",
     "type": "git"
   },
   "author": "Azer Koçulu <azer@kodfabrik.com>",
