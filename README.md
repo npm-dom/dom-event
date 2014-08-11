@@ -14,8 +14,8 @@ $ npm install dom-event
 var on = require('dom-event')
 var off = on.off
 
-on(document.body, hello) // adds the event listener
-off(document.body, hello) // removes
+on(document.body, 'click', hello) // adds the event listener
+off(document.body, 'click', hello) // removes
 
 function hello () {
   console.log('hello!')
