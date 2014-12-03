@@ -21,6 +21,17 @@ test('binds and unbinds a new event', function(t){
   }
 });
 
+test('IE shit', function (t) {
+  t.plan(2);
+
+  on({ attachEvent: assert }, 'click', function () {});
+  off({ detachEvent: assert }, 'click', function () {});
+
+  function assert (event) {
+    t.equal(event, 'onclick');
+  }
+});
+
 function reset () {
   document.body.innerHTML = '<button>Click Me</button>';
   button = document.querySelector('button');

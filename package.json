@@ -4,7 +4,7 @@
   "description": "Add/remove DOM events",
   "main": "index.js",
   "scripts": {
-    "test": "node test -b"
+    "test": "node test -b -l phantom -q"
   },
   "devDependencies": {
     "prova": "*"
