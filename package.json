@@ -1,6 +1,6 @@
 {
   "name": "dom-event",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add/remove DOM events",
   "main": "index.js",
   "scripts": {
