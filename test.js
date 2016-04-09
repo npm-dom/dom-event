@@ -1,4 +1,4 @@
-var test = require("prova");
+var test = require("tape");
 var on = require('./');
 var off = on.off;
 var button;
